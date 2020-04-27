@@ -17,21 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>JavaScript 作用域和作用域链 | 随笔</title>
+  <title>Hexo配置 | 随笔</title>
   <meta name="description" content="JavaScript 作用域和作用域链学习笔记。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript 作用域和作用域链">
-<meta property="og:url" content="http://yoursite.com/2020/04/20/hello-world/index.html">
+<meta property="og:title" content="Hexo配置">
+<meta property="og:url" content="http://yoursite.com/2015/05/20/Hexo%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E5%8F%8A%E7%94%A8%E6%B3%95/index.html">
 <meta property="og:site_name" content="学习笔记">
 <meta property="og:description" content="JavaScript 作用域和作用域链学习笔记。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-04-20T06:06:05.000Z">
-<meta property="article:modified_time" content="2020-04-27T08:58:34.657Z">
+<meta property="article:published_time" content="2015-05-20T06:06:05.000Z">
+<meta property="article:modified_time" content="2020-04-27T11:24:26.634Z">
 <meta property="article:author" content="Json Xu">
-<meta property="article:tag" content="test">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://yoursite.com/2020/04/20/hello-world/index.html">
+  <link rel="canonical" href="http://yoursite.com/2015/05/20/Hexo%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E5%8F%8A%E7%94%A8%E6%B3%95/index.html">
   
     <link rel="alternate" href="/atom.xml" title="学习笔记" type="application/atom+xml">
   
@@ -318,14 +318,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-hello-world" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-Hexo博客常用插件及用法" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      JavaScript 作用域和作用域链
+      Hexo配置
     </h1>
   
 
@@ -333,41 +333,60 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2020/04/20/hello-world/" class="article-date">
-	  <time datetime="2020-04-20T06:06:05.000Z" itemprop="datePublished">2020-04-20</time>
+	<a href="/2015/05/20/Hexo%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E5%8F%8A%E7%94%A8%E6%B3%95/" class="article-date">
+	  <time datetime="2015-05-20T06:06:05.000Z" itemprop="datePublished">2015-05-20</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+    <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
   </span>
 
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/test/" rel="tag">test</a>
+	<a class="article-tag-link" href="/tags/Hexo/" rel="tag">Hexo</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/04/20/hello-world/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2015/05/20/Hexo%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E5%8F%8A%E7%94%A8%E6%B3%95/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h3 id="创建新的博客"><a href="#创建新的博客" class="headerlink" title="创建新的博客"></a>创建新的博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <p>#hexo-autonofollow<br>Github：<a href="https://github.com/liuzc/hexo-autonofollow" target="_blank" rel="noopener">https://github.com/liuzc/hexo-autonofollow</a></p>
+<p>简介：自动为站外链接添加nofollow属性</p>
+<p>安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-autonofollow --save</span><br></pre></td></tr></table></figure>
+<p>配置：</p>
+<p>在博客配置文件_config.yml中添加</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">nofollow:</span><br><span class="line">  enable: <span class="literal">true</span></span><br><span class="line">  exclude:</span><br><span class="line">    - exclude1.com</span><br><span class="line">    - exclude2.com</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>enable - 是否启用</li>
+<li>exclude - 排除域名</li>
+</ul>
+</blockquote>
+<p>#hexo-baidu-url-submit<br>Github：<a href="https://github.com/huiwang/hexo-baidu-url-submit" target="_blank" rel="noopener">https://github.com/huiwang/hexo-baidu-url-submit</a></p>
+<p>简介：主动推送Hexo博客新链接至百度搜索引擎，解决百度爬虫被禁止访问的问题，提升网站收录质量和速度。</p>
+<p>安装：</p>
+<p>$ npm install hexo-baidu-url-submit –save<br>配置：</p>
+<p>在博客配置文件_config.yml中添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 1 ## 提交最新的一个链接</span><br><span class="line">  host: blog.cofess.com ## 在百度站长平台中注册的域名</span><br><span class="line">  token: your_token ## 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span><br><span class="line">  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
 
-<h3 id="开启博客"><a href="#开启博客" class="headerlink" title="开启博客"></a>开启博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-
-<p>###部署</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>token - 您得注册百度站长工具，然后在工具-&gt;网页抓取-&gt;链接提交里找到你的密匙。<br>其次，_config.ym文件中url的值， 必须是百度站长平台注册的域名， 比如:</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">url: blog.cofess.com</span><br><span class="line">root: &#x2F;</span><br><span class="line">permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</span><br></pre></td></tr></table></figure>
+<p>最后，加入新的deployer:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">- type: baidu_url_submitter</span><br></pre></td></tr></table></figure>
+<p>执行hexo deploy的时候，新的链接就会被推送百度了。</p>
 
       
     </div>
@@ -377,7 +396,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://yoursite.com/2020/04/20/hello-world/" title="JavaScript 作用域和作用域链" target="_blank" rel="external">http://yoursite.com/2020/04/20/hello-world/</a>
+      <a href="http://yoursite.com/2015/05/20/Hexo%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E5%8F%8A%E7%94%A8%E6%B3%95/" title="Hexo配置" target="_blank" rel="external">http://yoursite.com/2015/05/20/Hexo%E5%8D%9A%E5%AE%A2%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E5%8F%8A%E7%94%A8%E6%B3%95/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -424,13 +443,9 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2020/04/27/test/" title="test"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2015/05/20/JavaScript%20%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/" title="JavaScript 作用域和作用域链"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
-    
-    <li class="next">
-      <a href="/2015/05/20/JavaScript%20%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/" title="JavaScript 作用域和作用域链"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
-    </li>
     
     
   </ul>
