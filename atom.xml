@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>学习笔记</title>
+  
+  <subtitle>xcw</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-27T03:32:18.418Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Json Xu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>_config.yml 备注</title>
+    <link href="http://yoursite.com/2020/04/27/config%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://yoursite.com/2020/04/27/config%E8%AF%A6%E8%A7%A3/</id>
+    <published>2020-04-27T03:32:18.417Z</published>
+    <updated>2020-04-27T03:32:18.418Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Site"><a href="#Site" class="headerlink" title="Site"></a>Site</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title: 学习笔记</span><br><span class="line">tags: test</span><br><span class="line">subtitle: &#39;xcw&#39;  副标题</span><br><span class="line">description: &#39;&#39;主要用于SEO，告诉搜索引擎一个关于站点的简单描述</span><br><span class="line">keywords: &#39;&#39;  网站的关键词，使用半角逗号分隔开多个关键词，关键词对SEO的优化有一定的作用</span><br><span class="line">author: John Doe</span><br><span class="line">language: en</span><br><span class="line">timezone: &#39;&#39;</span><br></pre></td></tr></table></figure><p>##URL 如果您的网站位于子目录中，请将url设置为’<a href="http://yoursite.com/child&#39;，将root设置为&#39;/child/&#39;">http://yoursite.com/child&#39;，将root设置为&#39;/child/&#39;</a></p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">http://yoursite.com</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span> <span class="comment"># 设置为false时会将末尾的index.html去掉</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span> <span class="comment"># 设置为false时会将末尾的.html去掉，对index.html无效</span></span><br></pre></td></tr></table></figure><h2 id="Directory"><a href="#Directory" class="headerlink" title="Directory"></a>Directory</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">source_dir: source 出发文章的目录</span><br><span class="line">public_dir: public  存放生成文件的陌路</span><br><span class="line">tag_dir：按标签存放文章的目录，默认值是tags，如果我们给文章添加标签，使用hexo g时public文件夹下就会多出一个tags文件夹（根据我们的配置文件夹名不同），这里给hello-world.md添加一个tags</span><br><span class="line">archive_dir: archives 归档文件夹，存放归档文件，默认值为archives</span><br><span class="line">category_dir: categories分类文件夹，按分类存放的文件，和上面的tags一样，只要在文章中的Font-matter添加了categories就会在使用hexo g构造时出现相应的文件夹</span><br><span class="line">code_dir: downloads&#x2F;code Include code 文件夹，source_dir 下的子目录，默认值为downloads&#x2F;code</span><br><span class="line">i18n_dir: :lang 国际化（i18n）文件夹，默认值:lang</span><br><span class="line">skip_render:跳过指定文件的渲染，匹配到的文件将会被不做改动复制到public文件夹下，如果路径对应的是我们的文章，那会直接忽略掉该文章，我们这样设置来忽略掉hello-world.md文件</span><br></pre></td></tr></table></figure><p>##主页设置</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">index_generator:</span><br><span class="line">  path: <span class="string">''</span></span><br><span class="line">  per_page: <span class="number">10</span>   <span class="comment">//每页显示的帖子数</span></span><br><span class="line">  order_by: -date  <span class="comment">// 帖子排序</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Site&quot;&gt;&lt;a href=&quot;#Site&quot; class=&quot;headerlink&quot; title=&quot;Site&quot;&gt;&lt;/a&gt;Site&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hello-world</title>
+    <link href="http://yoursite.com/2020/04/27/hello-world/"/>
+    <id>http://yoursite.com/2020/04/27/hello-world/</id>
+    <published>2020-04-27T02:48:57.382Z</published>
+    <updated>2020-04-27T02:48:57.382Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h2 id="我的文档"><a href="#我的文档" class="headerlink" title="我的文档"></a>我的文档</h2><h3 id="创建新的博客"><a href="#创建新的博客" class="headerlink" title="创建新的博客"></a>创建新的博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><h3 id="开启博客"><a href="#开启博客" class="headerlink" title="开启博客"></a>开启博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><h3 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>###部署</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;h2 id=&quot;我的文档&quot;&gt;&lt;a href=&quot;#我的文档&quot; class=&quot;headerlink&quot; title=&quot;我的文档&quot;&gt;&lt;/a&gt;我的文档&lt;/h2&gt;&lt;h3 id=&quot;创建新的博客&quot;&gt;&lt;a href=&quot;#创建新的博客&quot; class=&quot;headerlink&quot; title=&quot;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2020/04/27/test/"/>
+    <id>http://yoursite.com/2020/04/27/test/</id>
+    <published>2020-04-27T02:47:01.000Z</published>
+    <updated>2020-04-27T02:47:01.952Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
