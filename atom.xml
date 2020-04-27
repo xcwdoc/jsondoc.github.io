@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-27T12:04:16.793Z</updated>
+  <updated>2020-04-27T12:47:36.379Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo 命令</title>
-    <link href="http://yoursite.com/2020/04/27/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/Hexo_%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2020/04/27/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/Hexo_%E5%91%BD%E4%BB%A4/</id>
-    <published>2020-04-27T12:04:16.793Z</published>
-    <updated>2020-04-27T12:04:16.793Z</updated>
+    <title>Hexo介绍</title>
+    <link href="http://yoursite.com/2020/04/27/note/Hexo%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2020/04/27/note/Hexo%E9%85%8D%E7%BD%AE/</id>
+    <published>2020-04-27T12:47:36.379Z</published>
+    <updated>2020-04-27T12:47:36.379Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="创建新的博客"><a href="#创建新的博客" class="headerlink" title="创建新的博客"></a>创建新的博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><h3 id="开启博客"><a href="#开启博客" class="headerlink" title="开启博客"></a>开启博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><h3 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>###部署</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h3 id="布局（Layout）"><a href="#布局（Layout）" class="headerlink" title="布局（Layout）"></a>布局（Layout）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">postsource&#x2F;_posts</span><br><span class="line">pagesource</span><br><span class="line">draftsource&#x2F;_drafts</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">new_post_name新文章的文件名称:title.md</span><br><span class="line">default_layout预设布局post</span><br><span class="line">auto_spacing在中文和英文之间加入空格false</span><br><span class="line">titlecase把标题转换为 title casefalse</span><br><span class="line">external_link在新标签中打开链接true</span><br><span class="line">external_link.enable在新标签中打开链接true</span><br><span class="line">external_link.field对整个网站（site）生效或仅对文章（post）生效site</span><br><span class="line">external_link.exclude需要排除的域名。主域名和子域名如 www 需分别配置[]</span><br><span class="line">filename_case把文件名称转换为 (1) 小写或 (2) 大写0</span><br><span class="line">render_drafts显示草稿false</span><br><span class="line">post_asset_folder启动 Asset 文件夹false</span><br><span class="line">relative_link把链接改为与根目录的相对位址false</span><br><span class="line">future显示未来的文章true</span><br><span class="line">highlight代码块的设置</span><br><span class="line">highlight.enable开启代码块高亮true</span><br><span class="line">highlight.auto_detect如果未指定语言，则启用自动检测false</span><br><span class="line">highlight.line_number显示行数</span><br><span class="line">Enabling this option will also enable wrap optiontrue</span><br><span class="line">highlight.tab_replace用 n 个空格替换 tabs；如果值为空，则不会替换 tabs&#39;&#39;</span><br><span class="line">highlight.wrapWrap the code block in &lt;table&gt;true</span><br><span class="line">highlight.hljsUse the hljs-* prefix for CSS classesfalse</span><br></pre></td></tr></table></figure><h3 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Front-matter 是文件最上方以 --- 分隔的区域，用于指定个别文件的变量，举例来说：</span><br><span class="line">layout布局</span><br><span class="line">title标题文章的文件名</span><br><span class="line">date建立日期文件建立日期</span><br><span class="line">updated更新日期文件更新日期</span><br><span class="line">comments开启文章的评论功能true</span><br><span class="line">tags标签（不适用于分页）</span><br><span class="line">categories分类（不适用于分页）</span><br><span class="line">permalink覆盖文章网址</span><br><span class="line">keywords仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      Hexo基本配置
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 命令</title>
+    <link href="http://yoursite.com/2020/04/27/note/Hexo_%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2020/04/27/note/Hexo_%E5%91%BD%E4%BB%A4/</id>
+    <published>2020-04-27T12:43:32.240Z</published>
+    <updated>2020-04-27T12:43:32.241Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo</span><br><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure><h3 id="创建新的博客"><a href="#创建新的博客" class="headerlink" title="创建新的博客"></a>创建新的博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><h3 id="开启博客"><a href="#开启博客" class="headerlink" title="开启博客"></a>开启博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><h3 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>###部署</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><h3 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><h3 id="知道路径"><a href="#知道路径" class="headerlink" title="知道路径"></a>知道路径</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page --path about/me <span class="string">"About me"</span></span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -40,9 +63,62 @@
   </entry>
   
   <entry>
+    <title>game</title>
+    <link href="http://yoursite.com/2020/04/27/game/H5/"/>
+    <id>http://yoursite.com/2020/04/27/game/H5/</id>
+    <published>2020-04-27T12:42:50.000Z</published>
+    <updated>2020-04-27T12:42:51.001Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2020/04/27/game/sss/"/>
+    <id>http://yoursite.com/2020/04/27/game/sss/</id>
+    <published>2020-04-27T12:42:19.000Z</published>
+    <updated>2020-04-27T12:42:19.027Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>This总结</title>
+    <link href="http://yoursite.com/2020/04/27/web/Js-this/"/>
+    <id>http://yoursite.com/2020/04/27/web/Js-this/</id>
+    <published>2020-04-27T12:12:36.460Z</published>
+    <updated>2020-04-27T12:12:36.460Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>content<br>{:toc}</li></ul><p>本文为慕课网 <a href="http://www.imooc.com/learn/277" target="_blank" rel="noopener">JavaScript深入浅出</a> JavaScript 中的 this笔记。</p><h2 id="全局的-this"><a href="#全局的-this" class="headerlink" title="全局的 this"></a>全局的 this</h2><p>全局 this 一般指向全局对象，浏览器中的全局对象就是 <code>window</code>。</p><p>例如：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>.document === <span class="built_in">document</span>); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span> === <span class="built_in">window</span>); <span class="comment">//true</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">this</span>.a = <span class="number">91</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.a); <span class="comment">//91</span></span><br></pre></td></tr></table></figure><h2 id="一般函数的-this"><a href="#一般函数的-this" class="headerlink" title="一般函数的 this"></a>一般函数的 this</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(f1() === <span class="built_in">window</span>);<span class="comment">//true, global object</span></span><br></pre></td></tr></table></figure><p>可以看到一般函数的 this 也指向 window，在 nodeJS 中为 global object</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f2</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="meta">    "use strict"</span>;<span class="comment">//使用严格模式</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(f1() === <span class="literal">undefined</span>);<span class="comment">//true</span></span><br></pre></td></tr></table></figure><p>严格模式中，函数的 this 为 undefined</p><h2 id="作为对象方法的函数的-this"><a href="#作为对象方法的函数的-this" class="headerlink" title="作为对象方法的函数的 this"></a>作为对象方法的函数的 this</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> o = &#123;</span><br><span class="line">    prop: <span class="number">37</span>,</span><br><span class="line">    f: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.prop;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(o.f()); <span class="comment">// 37</span></span><br></pre></td></tr></table></figure><p>上述代码通过字面量创建对象 o。</p><p>f 为对象 o 的方法。这个方法的 this 指向这个对象，在这里即对象 o。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> o = &#123;</span><br><span class="line">    prop: <span class="number">37</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">independent</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.prop;</span><br><span class="line">&#125;</span><br><span class="line">o.f = independent;</span><br><span class="line"><span class="built_in">console</span>.log(o.f()); <span class="comment">// 37</span></span><br></pre></td></tr></table></figure><p>上面的代码，创建了对象 o，但是没有给对象 o，添加方法。而是通过 <code>o.f = independent</code> 临时添加了方法属性。这样这个方法中的 this 同样也指向这个对象 o。</p><h2 id="对象原型链上的-this"><a href="#对象原型链上的-this" class="headerlink" title="对象原型链上的 this"></a>对象原型链上的 this</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> o = &#123;</span><br><span class="line">    f: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.a + <span class="keyword">this</span>.b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> p = <span class="built_in">Object</span>.create(o);</span><br><span class="line">p.a = <span class="number">1</span>;</span><br><span class="line">p.b = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">console</span>.log(p.f()); <span class="comment">//3</span></span><br></pre></td></tr></table></figure><p>通过 <code>var p = Object.create(o)</code> 创建的对象，p 是基于原型 o 创建出的对象。</p><p>p 的原型是 o，调用 f() 的时候是调用了 o 上的方法 f()，这里面的 this 是可以指向当前对象的，即对象 p。</p><h2 id="get-set-方法与-this"><a href="#get-set-方法与-this" class="headerlink" title="get/set 方法与 this"></a>get/set 方法与 this</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">modulus</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Math</span>.sqrt(<span class="keyword">this</span>.re * <span class="keyword">this</span>.re + <span class="keyword">this</span>.im * <span class="keyword">this</span>.im);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> o = &#123;</span><br><span class="line">    re: <span class="number">1</span>,</span><br><span class="line">    im: <span class="number">-1</span>,</span><br><span class="line">    <span class="keyword">get</span> phase() &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">Math</span>.atan2(<span class="keyword">this</span>.im, <span class="keyword">this</span>.re);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">Object</span>.defineProperty(o, <span class="string">'modulus'</span>, &#123;</span><br><span class="line">    <span class="keyword">get</span>: modulus,</span><br><span class="line">    enumerable: true,</span><br><span class="line">    configurable: true</span><br><span class="line">&#125;);</span><br><span class="line">console.log(o.phase, o.modulus); // -0.78 1.4142</span><br></pre></td></tr></table></figure><p>get/set 方法中的 this 也会指向 get/set 方法所在的对象的。</p><h2 id="构造器中的-this"><a href="#构造器中的-this" class="headerlink" title="构造器中的 this"></a>构造器中的 this</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyClass</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.a = <span class="number">25</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> o = <span class="keyword">new</span> MyClass();</span><br><span class="line"><span class="built_in">console</span>.log(o.a); <span class="comment">//25</span></span><br></pre></td></tr></table></figure><p>new MyClass() 的时候，MyClass()中的 this 会指向一个空对象，这个对象的原型会指向 MyClass.prototype。MyClass()没有返回值或者返回为基本类型时，默认将 this 返回。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">C2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.a = <span class="number">26</span>;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        a: <span class="number">24</span></span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">o = <span class="keyword">new</span> C2();</span><br><span class="line"><span class="built_in">console</span>.log(o.a); <span class="comment">//24</span></span><br></pre></td></tr></table></figure><p>因为返回了对象，将这个对象作为返回值</p><h2 id="call-apply-方法与-this"><a href="#call-apply-方法与-this" class="headerlink" title="call/apply 方法与 this"></a>call/apply 方法与 this</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">c, d</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.a + <span class="keyword">this</span>.b + c + d;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> o = &#123;</span><br><span class="line">    a: <span class="number">1</span>,</span><br><span class="line">    b: <span class="number">3</span></span><br><span class="line">&#125;;</span><br><span class="line">add.call(o, <span class="number">5</span>, <span class="number">7</span>); <span class="comment">// 1 + 3 + 5 + 7 = 16</span></span><br><span class="line">add.apply(o, [<span class="number">10</span>, <span class="number">20</span>]); <span class="comment">// 1 + 3 + 10 + 20 = 34</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(<span class="keyword">this</span>));</span><br><span class="line">&#125;</span><br><span class="line">bar.call(<span class="number">7</span>); <span class="comment">// "[object Number]"</span></span><br></pre></td></tr></table></figure><h2 id="bind-方法与-this"><a href="#bind-方法与-this" class="headerlink" title="bind 方法与 this"></a>bind 方法与 this</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> g = f.bind(&#123;</span><br><span class="line">    a: <span class="string">"test"</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(g()); <span class="comment">// test</span></span><br><span class="line"><span class="keyword">var</span> o = &#123;</span><br><span class="line">    a: <span class="number">37</span>,</span><br><span class="line">    f: f,</span><br><span class="line">    g: g</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(o.f(), o.g()); <span class="comment">// 37, test</span></span><br></pre></td></tr></table></figure><p>绑定之后再调用时，仍然会按绑定时的内容走，所以 o.g() 结果是 test</p>]]></content>
+    
+    <summary type="html">
+    
+      JavaScript this的总结。
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JS作用域</title>
-    <link href="http://yoursite.com/2020/04/27/Js_%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
-    <id>http://yoursite.com/2020/04/27/Js_%E4%BD%9C%E7%94%A8%E5%9F%9F/</id>
+    <link href="http://yoursite.com/2020/04/27/web/Js_%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
+    <id>http://yoursite.com/2020/04/27/web/Js_%E4%BD%9C%E7%94%A8%E5%9F%9F/</id>
     <published>2020-04-27T12:03:03.512Z</published>
     <updated>2020-04-27T12:03:03.512Z</updated>
     
@@ -64,8 +140,8 @@
   
   <entry>
     <title>Hexo 插件</title>
-    <link href="http://yoursite.com/2020/04/27/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/Hexo_%E6%8F%92%E4%BB%B6/"/>
-    <id>http://yoursite.com/2020/04/27/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/Hexo_%E6%8F%92%E4%BB%B6/</id>
+    <link href="http://yoursite.com/2020/04/27/note/Hexo_%E6%8F%92%E4%BB%B6/"/>
+    <id>http://yoursite.com/2020/04/27/note/Hexo_%E6%8F%92%E4%BB%B6/</id>
     <published>2020-04-27T12:01:08.852Z</published>
     <updated>2020-04-27T12:01:08.852Z</updated>
     
@@ -77,29 +153,6 @@
       
         &lt;p&gt;#hexo-autonofollow&lt;br&gt;Github：&lt;a href=&quot;https://github.com/liuzc/hexo-autonofollow&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/liuzc
       
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo配置</title>
-    <link href="http://yoursite.com/2020/04/27/Hexo%E9%85%8D%E7%BD%AE/"/>
-    <id>http://yoursite.com/2020/04/27/Hexo%E9%85%8D%E7%BD%AE/</id>
-    <published>2020-04-27T11:58:03.112Z</published>
-    <updated>2020-04-27T11:58:03.112Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Site"><a href="#Site" class="headerlink" title="Site"></a>Site</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title: 学习笔记</span><br><span class="line">tags: test</span><br><span class="line">subtitle: &#39;xcw&#39;  副标题</span><br><span class="line">description: &#39;&#39;主要用于SEO，告诉搜索引擎一个关于站点的简单描述</span><br><span class="line">keywords: &#39;&#39;  网站的关键词，使用半角逗号分隔开多个关键词，关键词对SEO的优化有一定的作用</span><br><span class="line">author: John Doe</span><br><span class="line">language: en</span><br><span class="line">timezone: &#39;&#39;</span><br></pre></td></tr></table></figure><p>##URL 如果您的网站位于子目录中，请将url设置为’<a href="http://yoursite.com/child&#39;，将root设置为&#39;/child/&#39;">http://yoursite.com/child&#39;，将root设置为&#39;/child/&#39;</a></p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">http://yoursite.com</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span> <span class="comment"># 设置为false时会将末尾的index.html去掉</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span> <span class="comment"># 设置为false时会将末尾的.html去掉，对index.html无效</span></span><br></pre></td></tr></table></figure><h2 id="Directory"><a href="#Directory" class="headerlink" title="Directory"></a>Directory</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">source_dir: source 出发文章的目录</span><br><span class="line">public_dir: public  存放生成文件的陌路</span><br><span class="line">tag_dir：按标签存放文章的目录，默认值是tags，如果我们给文章添加标签，使用hexo g时public文件夹下就会多出一个tags文件夹（根据我们的配置文件夹名不同），这里给hello-world.md添加一个tags</span><br><span class="line">archive_dir: archives 归档文件夹，存放归档文件，默认值为archives</span><br><span class="line">category_dir: categories分类文件夹，按分类存放的文件，和上面的tags一样，只要在文章中的Font-matter添加了categories就会在使用hexo g构造时出现相应的文件夹</span><br><span class="line">code_dir: downloads&#x2F;code Include code 文件夹，source_dir 下的子目录，默认值为downloads&#x2F;code</span><br><span class="line">i18n_dir: :lang 国际化（i18n）文件夹，默认值:lang</span><br><span class="line">skip_render:跳过指定文件的渲染，匹配到的文件将会被不做改动复制到public文件夹下，如果路径对应的是我们的文章，那会直接忽略掉该文章，我们这样设置来忽略掉hello-world.md文件</span><br></pre></td></tr></table></figure><p>##主页设置</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">index_generator:</span><br><span class="line">  path: <span class="string">''</span></span><br><span class="line">  per_page: <span class="number">10</span>   <span class="comment">//每页显示的帖子数</span></span><br><span class="line">  order_by: -date  <span class="comment">// 帖子排序</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      Hexo基本配置
     
     </summary>
     

@@ -2,30 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/04/27/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/Hexo_%E5%91%BD%E4%BB%A4/</loc>
+    <loc>http://yoursite.com/2020/04/27/note/Hexo%E9%85%8D%E7%BD%AE/</loc>
     
-    <lastmod>2020-04-27T12:04:16.793Z</lastmod>
+    <lastmod>2020-04-27T12:47:36.379Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2020/04/27/Js_%E4%BD%9C%E7%94%A8%E5%9F%9F/</loc>
+    <loc>http://yoursite.com/2020/04/27/note/Hexo_%E5%91%BD%E4%BB%A4/</loc>
+    
+    <lastmod>2020-04-27T12:43:32.241Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/04/27/game/H5/</loc>
+    
+    <lastmod>2020-04-27T12:42:51.001Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/04/27/game/sss/</loc>
+    
+    <lastmod>2020-04-27T12:42:19.027Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/04/27/web/Js-this/</loc>
+    
+    <lastmod>2020-04-27T12:12:36.460Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/04/27/web/Js_%E4%BD%9C%E7%94%A8%E5%9F%9F/</loc>
     
     <lastmod>2020-04-27T12:03:03.512Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2020/04/27/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/Hexo_%E6%8F%92%E4%BB%B6/</loc>
+    <loc>http://yoursite.com/2020/04/27/note/Hexo_%E6%8F%92%E4%BB%B6/</loc>
     
     <lastmod>2020-04-27T12:01:08.852Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/04/27/Hexo%E9%85%8D%E7%BD%AE/</loc>
-    
-    <lastmod>2020-04-27T11:58:03.112Z</lastmod>
     
   </url>
   
