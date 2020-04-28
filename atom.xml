@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-27T12:47:36.379Z</updated>
+  <updated>2020-04-28T02:37:10.188Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,72 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>WebGl总结</title>
+    <link href="http://yoursite.com/2020/04/28/opengl/opengl_01/"/>
+    <id>http://yoursite.com/2020/04/28/opengl/opengl_01/</id>
+    <published>2020-04-28T02:28:10.000Z</published>
+    <updated>2020-04-28T02:37:10.188Z</updated>
+    
+    <content type="html"><![CDATA[<p>#WebGl思维导图<br><img src="GlSL.png" alt="Webgl总结"></p>]]></content>
+    
+    <summary type="html">
+    
+      WebGl基本配置
+    
+    </summary>
+    
+    
+      <category term="WebGl" scheme="http://yoursite.com/categories/WebGl/"/>
+    
+    
+      <category term="WebGl" scheme="http://yoursite.com/tags/WebGl/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2020/04/28/arithmetic/test/"/>
+    <id>http://yoursite.com/2020/04/28/arithmetic/test/</id>
+    <published>2020-04-28T02:27:03.000Z</published>
+    <updated>2020-04-28T02:27:03.398Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>洗牌算法</title>
+    <link href="http://yoursite.com/2020/04/28/arithmetic/shuffle/"/>
+    <id>http://yoursite.com/2020/04/28/arithmetic/shuffle/</id>
+    <published>2020-04-28T02:13:59.274Z</published>
+    <updated>2020-04-28T02:13:59.274Z</updated>
+    
+    <content type="html"><![CDATA[<p>简单来说 Fisher–Yates shuffle 算法是一个用来将一个有限集合生成一个随机排列的算法（数组随机排序）。这个算法生成的随机排列是等概率的。同时这个算法非常高效。</p><h2 id="Fisher-and-Yates-的原始版"><a href="#Fisher-and-Yates-的原始版" class="headerlink" title="Fisher and Yates 的原始版"></a>Fisher and Yates 的原始版</h2><ol><li>写下从 1 到 N 的数字</li><li>取一个从 1 到剩下的数字（包括这个数字）的随机数 k</li><li>从低位开始，得到第 k 个数字（这个数字还没有被取出），把它写在独立的一个列表的最后一位</li><li>重复第 2 步，直到所有的数字都被取出</li><li>第 3 步写出的这个序列，现在就是原始数字的随机排列</li></ol><p>已经证明如果第 2 步取出的数字是真随机的，那么最后得到的排序一定也是。</p><h2 id="现代方法"><a href="#现代方法" class="headerlink" title="现代方法"></a>现代方法</h2><p>Fisher–Yates shuffle 算法的现代版本是为计算机设计的。由 Richard Durstenfeld 在1964年 描述。并且是被 Donald E. Knuth 在 《The Art of Computer Programming》 中推广。但是不管是 Durstenfeld 还是 Knuth，都没有在书的第一版中承认这个算法是 Fisher 和 Yates 的研究成果。也许他们并不知道。不过后来出版的 《The Art of Computer Programming》提到了 Fisher 和 Yates 贡献。</p><p>现代版本的描述与原始略有不同，因为如果按照原始方法，愚蠢的计算机会花很多无用的时间去计算上述第 3 步的剩余数字。<strong>这里的方法是在每次迭代时交换这个被取出的数字到原始列表的最后</strong>。这样就将时间复杂度从 O(n^2) 减小到了 <strong>O(n)</strong>。算法的伪代码如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-- To shuffle an array a of n elements (indices 0..n-1):</span><br><span class="line">for i from n−1 downto 1 do</span><br><span class="line">     j ← random integer such that 0 ≤ j ≤ i</span><br><span class="line">     exchange a[j] and a[i]</span><br></pre></td></tr></table></figure><h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><h3 id="迭代步骤演示"><a href="#迭代步骤演示" class="headerlink" title="迭代步骤演示"></a>迭代步骤演示</h3><p>根据每次迭代次数可以用下面的表格，描述这个算法的执行过程</p><table><thead><tr><th align="left">随机数取值范围</th><th align="left">随机数</th><th align="right">原始数据</th><th align="left">结果</th></tr></thead><tbody><tr><td align="left"></td><td align="left"></td><td align="right">1 2 3 4 5 6 7 8</td><td align="left"></td></tr><tr><td align="left">1-8</td><td align="left">6</td><td align="right">1 2 3 4 5 7 8</td><td align="left">6</td></tr><tr><td align="left">1-7</td><td align="left">2</td><td align="right">1 7 3 4 5 8</td><td align="left">2 6</td></tr><tr><td align="left">1–6</td><td align="left">6</td><td align="right">1 7 3 4 5</td><td align="left">8 2 6</td></tr><tr><td align="left">1–5</td><td align="left">1</td><td align="right">5 7 3 4</td><td align="left">1 8 2 6</td></tr><tr><td align="left">1–4</td><td align="left">3</td><td align="right">5 7 4</td><td align="left">3 1 8 2 6</td></tr><tr><td align="left">1–3</td><td align="left">3</td><td align="right">5 7</td><td align="left">4 3 1 8 2 6</td></tr><tr><td align="left">1–2</td><td align="left">1</td><td align="right">7</td><td align="left">5 4 3 1 8 2 6</td></tr></tbody></table><h3 id="动画演示"><a href="#动画演示" class="headerlink" title="动画演示"></a>动画演示</h3><p>下面这个动画就是整个数组 0-19 的随机排序过程</p><iframe height='317' scrolling='no' src='//codepen.io/haoyang/embed/jrvrQq/?height=317&theme-id=dark&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/haoyang/pen/jrvrQq/' target="_blank" rel="noopener">Fisher–Yates shuffle</a> by Chuan shi (<a href='http://codepen.io/haoyang' target="_blank" rel="noopener">@haoyang</a>) on <a href='http://codepen.io' target="_blank" rel="noopener">CodePen</a>.</iframe><h2 id="JavaScript-代码实现"><a href="#JavaScript-代码实现" class="headerlink" title="JavaScript 代码实现"></a>JavaScript 代码实现</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Fisher–Yates shuffle</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="built_in">Array</span>.prototype.shuffle = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> input = <span class="keyword">this</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = input.length<span class="number">-1</span>; i &gt;=<span class="number">0</span>; i--) &#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> randomIndex = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random()*(i+<span class="number">1</span>));</span><br><span class="line">        <span class="keyword">var</span> itemAtIndex = input[randomIndex];</span><br><span class="line"></span><br><span class="line">        input[randomIndex] = input[i];</span><br><span class="line">        input[i] = itemAtIndex;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> input;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>使用方式也很简单，直接用数组调用这个方法即可</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>].shuffle()</span><br><span class="line"></span><br><span class="line"><span class="comment">//[4, 6, 3, 2, 5, 1, 7, 8] // 每次结果都是随机的</span></span><br></pre></td></tr></table></figure><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总之，Fisher–Yates shuffle 算法是一个非常高效又公平的随机排序算法，如果有随机排序数组的需求，用这个就对了！</p>]]></content>
+    
+    <summary type="html">
+    
+      洗牌算法介绍
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+    
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo介绍</title>
-    <link href="http://yoursite.com/2020/04/27/note/Hexo%E9%85%8D%E7%BD%AE/"/>
-    <id>http://yoursite.com/2020/04/27/note/Hexo%E9%85%8D%E7%BD%AE/</id>
-    <published>2020-04-27T12:47:36.379Z</published>
-    <updated>2020-04-27T12:47:36.379Z</updated>
+    <link href="http://yoursite.com/2020/04/28/note/Hexo%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2020/04/28/note/Hexo%E9%85%8D%E7%BD%AE/</id>
+    <published>2020-04-28T02:08:02.619Z</published>
+    <updated>2020-04-28T02:08:02.619Z</updated>
     
     <content type="html"><![CDATA[<h3 id="布局（Layout）"><a href="#布局（Layout）" class="headerlink" title="布局（Layout）"></a>布局（Layout）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">postsource&#x2F;_posts</span><br><span class="line">pagesource</span><br><span class="line">draftsource&#x2F;_drafts</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">new_post_name新文章的文件名称:title.md</span><br><span class="line">default_layout预设布局post</span><br><span class="line">auto_spacing在中文和英文之间加入空格false</span><br><span class="line">titlecase把标题转换为 title casefalse</span><br><span class="line">external_link在新标签中打开链接true</span><br><span class="line">external_link.enable在新标签中打开链接true</span><br><span class="line">external_link.field对整个网站（site）生效或仅对文章（post）生效site</span><br><span class="line">external_link.exclude需要排除的域名。主域名和子域名如 www 需分别配置[]</span><br><span class="line">filename_case把文件名称转换为 (1) 小写或 (2) 大写0</span><br><span class="line">render_drafts显示草稿false</span><br><span class="line">post_asset_folder启动 Asset 文件夹false</span><br><span class="line">relative_link把链接改为与根目录的相对位址false</span><br><span class="line">future显示未来的文章true</span><br><span class="line">highlight代码块的设置</span><br><span class="line">highlight.enable开启代码块高亮true</span><br><span class="line">highlight.auto_detect如果未指定语言，则启用自动检测false</span><br><span class="line">highlight.line_number显示行数</span><br><span class="line">Enabling this option will also enable wrap optiontrue</span><br><span class="line">highlight.tab_replace用 n 个空格替换 tabs；如果值为空，则不会替换 tabs&#39;&#39;</span><br><span class="line">highlight.wrapWrap the code block in &lt;table&gt;true</span><br><span class="line">highlight.hljsUse the hljs-* prefix for CSS classesfalse</span><br></pre></td></tr></table></figure><h3 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Front-matter 是文件最上方以 --- 分隔的区域，用于指定个别文件的变量，举例来说：</span><br><span class="line">layout布局</span><br><span class="line">title标题文章的文件名</span><br><span class="line">date建立日期文件建立日期</span><br><span class="line">updated更新日期文件更新日期</span><br><span class="line">comments开启文章的评论功能true</span><br><span class="line">tags标签（不适用于分页）</span><br><span class="line">categories分类（不适用于分页）</span><br><span class="line">permalink覆盖文章网址</span><br><span class="line">keywords仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -67,28 +128,17 @@
     <link href="http://yoursite.com/2020/04/27/game/H5/"/>
     <id>http://yoursite.com/2020/04/27/game/H5/</id>
     <published>2020-04-27T12:42:50.000Z</published>
-    <updated>2020-04-27T12:42:51.001Z</updated>
+    <updated>2020-04-27T13:01:17.019Z</updated>
     
     <summary type="html">
     
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://yoursite.com/2020/04/27/game/sss/"/>
-    <id>http://yoursite.com/2020/04/27/game/sss/</id>
-    <published>2020-04-27T12:42:19.000Z</published>
-    <updated>2020-04-27T12:42:19.027Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
+      <category term="game" scheme="http://yoursite.com/categories/game/"/>
     
     
+      <category term="game" scheme="http://yoursite.com/tags/game/"/>
     
   </entry>
   

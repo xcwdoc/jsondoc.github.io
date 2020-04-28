@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://yoursite.com/2020/04/27/note/Hexo%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2020-04-27</lastmod>
+    <loc>http://yoursite.com/2020/04/28/opengl/opengl_01/</loc>
+    <lastmod>2020-04-28</lastmod>
   </url>  <url>
-    <loc>http://yoursite.com/2020/04/27/note/Hexo_%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2020-04-27</lastmod>
+    <loc>http://yoursite.com/2020/04/28/arithmetic/test/</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/04/28/arithmetic/shuffle/</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/04/28/note/Hexo%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2020-04-28</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2020/04/27/game/H5/</loc>
     <lastmod>2020-04-27</lastmod>
   </url>  <url>
-    <loc>http://yoursite.com/2020/04/27/game/sss/</loc>
+    <loc>http://yoursite.com/2020/04/27/note/Hexo_%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2020-04-27</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2020/04/27/web/Js-this/</loc>
